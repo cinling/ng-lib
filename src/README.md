@@ -1,24 +1,16 @@
-# Lib
+## decorators
+ - InputBool
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
+```ts
+import {InputBool} from "@cinling/lib/decorators/InputBool";
 
-## Code scaffolding
+class DemoCompoent {
+    @InputBool()
+    readonly: boolean = flase
+}
+```
 
-Run `ng generate component component-name --project lib` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project lib`.
-> Note: Don't forget to add `--project lib` or else it will be added to the default project in your `angular.json` file. 
-
-## Build
-
-Run `ng build lib` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build lib`, go to the dist folder `cd dist/lib` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test lib` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```html
+<Demo readonly></Demo> <!-- 組件中 readonly = true -->
+<Demo></Demo> <!-- 組件中 readonly = false -->
+```
