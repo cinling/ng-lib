@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "@cinling/lib": {
+    "@cinling/ng-lib": {
       "projectType": "library",
       "root": "",
       "sourceRoot": "src",
@@ -47,5 +47,5 @@
       }
     }
   },
-  "defaultProject": "@cinling/lib"
+  "defaultProject": "@cinling/ng-lib"
 }
