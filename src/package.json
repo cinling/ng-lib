@@ -1,6 +1,6 @@
 {
   "name": "@cinling/ng-lib",
-  "version": "11.0.1-alpha.0",
+  "version": "11.0.1-alpha.1",
   "peerDependencies": {
     "@angular/animations": "~11.2.14",
     "@angular/cdk": "~11.2.13",
